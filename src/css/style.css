@@ -125,3 +125,54 @@
   top: -15%;
   right: -18%;
 }
+/* ///////////////////////////////////// */
+/* DEALS */
+/* ///////////////////////////////////// */
+.deals__figures {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: 20rem 20rem;
+  gap: 2.5rem;
+}
+.deals__figure {
+  border-radius: 1.5rem;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+.deals__figure:nth-child(odd) .heading-tertiary {
+  font-size: 2rem;
+}
+
+.deals__figure--1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    url(../assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.deals__figure--2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    url(../assets/deal-zabo.png);
+  background-repeat: no-repeat;
+
+  grid-row: 1 / -1;
+  grid-column: 2 / span 1;
+}
+.deals__figure--3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url(../assets/deal-ana.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.deals__figure a:link,
+.deals__figure a:visited {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.deals__figure:nth-child(even) a:link,
+.deals__figure:nth-child(even) a:visited {
+  font-size: 3rem;
+}
