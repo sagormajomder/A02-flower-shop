@@ -98,3 +98,30 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+/* ///////////////////////////////////// */
+/* CLIENT */
+/* ///////////////////////////////////// */
+.client {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6rem;
+  align-items: center;
+  padding: 6rem 0;
+}
+.client__items {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.client__items li {
+  list-style-position: inside;
+  margin-left: 1.5rem;
+}
+.client__img {
+  position: relative;
+}
+.client__trust {
+  max-width: 23rem;
+  position: absolute;
+  top: -15%;
+  right: -18%;
+}

@@ -37,6 +37,19 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 3rem;
   }
+  .client {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(0, max-content));
+    gap: 4rem;
+  }
+
+  .client__img > img {
+    width: 100%;
+  }
+
+  .client__trust {
+    display: none;
+  }
 }
 /* ///////////////////////////////////// */
 /* Mobile large 640px */
@@ -51,6 +64,9 @@
 
   .plant__content {
     max-width: 90%;
+  }
+  .client {
+    margin-top: -6rem;
   }
 }
 /* ///////////////////////////////////// */
