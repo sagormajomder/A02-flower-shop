@@ -1,0 +1,53 @@
+/* ///////////////////////////////////// */
+/* HEADER */
+/* ///////////////////////////////////// */
+.header__nav {
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem 0;
+}
+
+.header__logo img {
+  height: 6.5rem;
+}
+
+.header__menu {
+  gap: 3.5rem;
+
+  margin-left: auto;
+}
+
+.menu {
+  gap: 3rem;
+}
+
+.menu__item {
+  list-style: none;
+}
+.menu__link:link,
+.menu__link:visited {
+  color: var(--color-nav);
+
+  transition: 0.5s;
+}
+
+.menu__link:hover,
+.menu__link:active {
+  color: var(--color-primary-light);
+}
+
+#menu__link--active {
+  color: var(--color-black);
+}
+.cart {
+  gap: 1rem;
+  align-items: center;
+}
+
+.cart:link,
+.cart:visited,
+.cart:hover,
+.cart:active {
+  color: var(--color-black);
+}
