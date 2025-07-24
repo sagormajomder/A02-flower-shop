@@ -6,10 +6,13 @@
     padding: 0 4rem;
   }
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
   .heading-primary {
-    font-size: 5.2rem;
+    font-size: 4.7rem;
+  }
+  .heading-secondary {
+    font-size: 4rem;
   }
   .footer {
     padding: 6rem 4rem;
@@ -19,6 +22,12 @@
 /* Tablet 768px */
 /* ///////////////////////////////////// */
 @media screen and (max-width: 48rem) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .heading-secondary {
+    font-size: 3.5rem;
+  }
   .header__logo img {
     height: 6rem;
   }
@@ -68,11 +77,14 @@
 /* Mobile large 640px */
 /* ///////////////////////////////////// */
 @media screen and (max-width: 40rem) {
+  .header__logo img {
+    height: 4.5rem;
+  }
   .plant__content {
     max-width: 90%;
   }
   .client {
-    margin-top: -6rem;
+    padding-top: 0;
   }
 
   .deals__figures {
@@ -122,6 +134,10 @@
   }
 
   .subscribe__container {
+    height: 20rem;
+  }
+
+  .subscribe__container {
     gap: 3rem;
   }
 
@@ -129,10 +145,11 @@
     font-size: 3rem;
   }
   .footer {
-    column-gap: 8rem;
+    column-gap: 4rem;
   }
   .footer__social {
     grid-column: 1 / span 2;
+    justify-self: start;
   }
 }
 /* ///////////////////////////////////// */
@@ -145,12 +162,15 @@
   .header {
     margin-bottom: 6rem;
   }
+  .header__logo img {
+    height: 5rem;
+  }
 
   .heading-secondary {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   .heading-primary {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   .menu {
@@ -160,12 +180,45 @@
   .plant__content {
     max-width: 100%;
   }
+  .plant__item .btn {
+    font-size: 1.5rem;
+  }
+
+  .deals__figure:nth-child(odd) .heading-tertiary {
+    font-size: 2.6rem;
+  }
+  .deals__figure:nth-child(even) .heading-tertiary {
+    font-size: 2.6rem;
+  }
+
+  .deals__figure:nth-child(odd) a:link,
+  .deals__figure:nth-child(odd) a:visited {
+    font-size: 2.3rem;
+  }
+
+  .deals__figure:nth-child(even) a:link,
+  .deals__figure:nth-child(even) a:visited {
+    font-size: 2.3rem;
+  }
+
+  .subscribe__container {
+    height: 12rem;
+  }
   .subscribe__container .heading-secondary {
     font-size: 2.5rem;
   }
+  .subscribe__input [type='email'] {
+    flex-basis: 30%;
+    font-size: 1.4rem;
+  }
+  .subscribe__input [type='submit'] {
+    flex-basis: 10%;
+    font-size: 1.4rem;
+  }
   .footer {
     grid-template-columns: 1fr;
-    padding: 6rem 4rem;
+    padding: 6rem 2rem;
+    justify-items: start;
   }
   .footer__social {
     grid-column: 1 / span 1;

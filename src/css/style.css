@@ -92,7 +92,7 @@
 .plant__price {
   font-weight: 800;
   font-size: 2.2rem;
-  color: var(--color-black);
+  color: var(--color-dark);
 }
 .plant__item button {
   text-transform: uppercase;
@@ -112,9 +112,8 @@
   flex-direction: column;
   gap: 1.5rem;
 }
-.client__items li {
-  list-style-position: inside;
-  margin-left: 1.5rem;
+.client__items {
+  margin-left: 3rem;
 }
 .client__img {
   position: relative;
@@ -122,17 +121,19 @@
 .client__trust {
   max-width: 23rem;
   position: absolute;
-  top: -15%;
-  right: -18%;
-  animation: spinning 2s ease-in-out 0s infinite;
+  top: -9rem;
+  right: -8.5rem;
+  animation: spinning 1.3s ease-in-out 0s infinite;
 
+  transform-origin: center center;
+  will-change: transform;
   backface-visibility: hidden;
 }
 @keyframes spinning {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
@@ -194,12 +195,13 @@
   background-image: url(../assets/news-letter-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   padding: 6rem 0;
 }
 .subscribe__container {
   flex-direction: column;
   text-align: center;
-  gap: 1rem;
+  gap: 1.5rem;
 
   height: 30rem;
 }
@@ -222,7 +224,7 @@
 }
 
 .subscribe__input [type='submit'] {
-  flex-basis: 25%;
+  flex-basis: 20%;
 }
 /* ///////////////////////////////////// */
 /* FOOTER */
@@ -233,6 +235,8 @@
   align-items: start;
   gap: 2rem;
   padding: 6rem;
+
+  justify-items: center;
 }
 .footer__logo {
   flex-direction: column;
