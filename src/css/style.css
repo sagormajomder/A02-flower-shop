@@ -62,3 +62,39 @@
 .hero__content span {
   color: var(--color-primary);
 }
+/* ///////////////////////////////////// */
+/* PLANT */
+/* ///////////////////////////////////// */
+
+.plant__content {
+  flex-direction: column;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto 4.5rem;
+}
+.plant__content span {
+  color: var(--color-primary);
+}
+
+.plant__items {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-items: center;
+  gap: 2.5rem;
+}
+
+.plant__item {
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.plant__price {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: var(--color-black);
+}
+.plant__item button {
+  text-transform: uppercase;
+  font-weight: 600;
+}

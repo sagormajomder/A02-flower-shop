@@ -32,6 +32,11 @@
   .hero__img {
     justify-items: end;
   }
+
+  .plant__items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 3rem;
+  }
 }
 /* ///////////////////////////////////// */
 /* Mobile large 640px */
@@ -43,6 +48,10 @@
   .menu {
     display: none;
   }
+
+  .plant__content {
+    max-width: 90%;
+  }
 }
 /* ///////////////////////////////////// */
 /* Mobile 480px */
@@ -51,10 +60,17 @@
   .container {
     padding: 0 2rem;
   }
+  .heading-secondary {
+    font-size: 4rem;
+  }
   .header__logo img {
     height: 4rem;
   }
   .heading-primary {
     font-size: 4.5rem;
+  }
+
+  .plant__content {
+    max-width: 100%;
   }
 }

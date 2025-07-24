@@ -83,6 +83,25 @@ button {
   font-family: var(--font-inter);
   font-size: 2.4rem;
   font-weight: 600;
+  color: var(--color-black);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  outline: none;
+  border: none;
+  padding: 0.8rem 2.5rem;
+
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-primary-dark);
 }
 
 .d-flex {
@@ -95,7 +114,7 @@ button {
 }
 
 .mb-lg {
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
 }
 .mb-md {
   margin-bottom: 4rem;
