@@ -68,13 +68,6 @@
 /* Mobile large 640px */
 /* ///////////////////////////////////// */
 @media screen and (max-width: 40rem) {
-  html {
-    font-size: 43.75%;
-  }
-  .menu {
-    display: none;
-  }
-
   .plant__content {
     max-width: 90%;
   }
@@ -149,14 +142,16 @@
   .container {
     padding: 0 2rem;
   }
+
   .heading-secondary {
     font-size: 4rem;
   }
-  .header__logo img {
-    height: 4rem;
-  }
   .heading-primary {
     font-size: 4.5rem;
+  }
+
+  .menu {
+    display: none;
   }
 
   .plant__content {

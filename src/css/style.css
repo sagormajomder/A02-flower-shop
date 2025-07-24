@@ -41,7 +41,7 @@
   color: var(--color-black);
 }
 .cart {
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
 }
 
