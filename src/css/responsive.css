@@ -50,6 +50,11 @@
   .client__trust {
     display: none;
   }
+
+  .subscribe__input [type='email'] {
+    flex-basis: 65%;
+    padding: 1.2rem 1rem;
+  }
 }
 /* ///////////////////////////////////// */
 /* Mobile large 640px */
@@ -114,6 +119,14 @@
   .deals__figure:nth-child(odd) a:visited {
     font-size: 3rem;
   }
+
+  .subscribe__container {
+    gap: 3rem;
+  }
+
+  .subscribe__container .heading-secondary {
+    font-size: 3rem;
+  }
 }
 /* ///////////////////////////////////// */
 /* Mobile 480px */
@@ -134,5 +147,8 @@
 
   .plant__content {
     max-width: 100%;
+  }
+  .subscribe__container .heading-secondary {
+    font-size: 2.5rem;
   }
 }
