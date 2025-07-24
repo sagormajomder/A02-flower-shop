@@ -213,3 +213,27 @@
 .subscribe__input [type='submit'] {
   flex-basis: 25%;
 }
+/* ///////////////////////////////////// */
+/* FOOTER */
+/* ///////////////////////////////////// */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 2rem;
+  padding: 6rem;
+}
+.footer__logo {
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__menu {
+  color: var(--color-footer);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer__social {
+  gap: 2rem;
+  align-items: center;
+}
