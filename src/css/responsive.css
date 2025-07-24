@@ -142,6 +142,9 @@
   .container {
     padding: 0 2rem;
   }
+  .header {
+    margin-bottom: 6rem;
+  }
 
   .heading-secondary {
     font-size: 4rem;
