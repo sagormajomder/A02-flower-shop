@@ -1,24 +1,60 @@
-/* Laptop */
+/* ///////////////////////////////////// */
+/* Laptop 1024px */
+/* ///////////////////////////////////// */
 @media screen and (max-width: 64rem) {
+  .container {
+    padding: 0 4rem;
+  }
+  html {
+    font-size: 50%;
+  }
+  .heading-primary {
+    font-size: 5.2rem;
+  }
 }
-/* Tablet */
+/* ///////////////////////////////////// */
+/* Tablet 768px */
+/* ///////////////////////////////////// */
 @media screen and (max-width: 48rem) {
   .header__logo img {
     height: 6rem;
   }
+
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(0, max-content));
+    align-items: start;
+    row-gap: 4rem;
+  }
+  .hero__content {
+    grid-row: 2;
+  }
+  .hero__img {
+    justify-items: end;
+  }
 }
-/* Mobile large */
+/* ///////////////////////////////////// */
+/* Mobile large 640px */
+/* ///////////////////////////////////// */
 @media screen and (max-width: 40rem) {
+  html {
+    font-size: 43.75%;
+  }
   .menu {
     display: none;
   }
 }
-/* Mobile */
+/* ///////////////////////////////////// */
+/* Mobile 480px */
+/* ///////////////////////////////////// */
 @media screen and (max-width: 30rem) {
   .container {
     padding: 0 2rem;
   }
   .header__logo img {
     height: 4rem;
+  }
+  .heading-primary {
+    font-size: 4.5rem;
   }
 }
